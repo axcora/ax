@@ -1,18 +1,25 @@
 {
-  "title": "AX",
-  "name": "Axcora AX Demo",
-  "description": "Demo site built with Axcora AX - minimalist static site generator with modern design",
+  "name": "AX SSG",
+  "lang": "en",
+  "locale": "en-US",
+  "description": "Demo site built with AX SSG - minimalist static site generator with modern design - by Axcora tech",
   "url": "https://ax.axcora.com",
-  "author": "Creativitas Dev & Axcora Team",
+  "icon": "/assets/img/logo.png",
+  "author": {
+              "name": "Axcora Team", 
+              "url": "https://ax.axcora.com" 
+   },
+  "blog_list_title": "The Blog",
   "show_blog_list": "6",
+  "title": "AX",
   "nav": [
     { "title": "Home", "url": "/" },
     { "title": "Blog", "url": "/blog.html" },
     { "title": "Tags", "url": "/tags.html" },
-    { "title": "About", "url": "/tentang.html" }
+    { "title": "About", "url": "/about.html" }
   ],
   "social": [
-    { "name": "GitHub", "url": "https://github.com/sponsors/mesinkasir", "icon": "github" },
-    { "name": "Website", "url": "https://axcora.com", "icon": "web" }
+    { "name": "GitHub", "url": "https://github.com/sponsors/mesinkasir/"},
+    { "name": "Website", "url": "https://ax.axcora.com/" }
   ]
 }
