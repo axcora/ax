@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <rss version="2.0">
   <channel>
-    <title>Axcora AX Demo</title>
-    <description>Demo site built with Axcora AX - minimalist static site generator with modern design</description>
+    <title>AX SSG</title>
+    <description>Demo site built with AX SSG - minimalist static site generator with modern design - by Axcora tech</description>
     <link>https://ax.axcora.com/</link>
     <item>
 <title><![CDATA[Automate Your SEO: Sitemaps, RSS, and Robots with AX SSG]]></title>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://ax.axcora.com/about.html</loc></url>
 <url><loc>https://ax.axcora.com/blog/automate-your-seo-with-ax-ssg-by-axcora.html</loc></url>
 <url><loc>https://ax.axcora.com/blog/ax-ssg-vs-traditional-generators.html</loc></url>
 <url><loc>https://ax.axcora.com/blog/getting-started-with-axcora-ssg.html</loc></url>
@@ -13,10 +14,6 @@
 <url><loc>https://ax.axcora.com/blog/the-power-of-minimalism.html</loc></url>
 <url><loc>https://ax.axcora.com/blog/welcome-to-axcora-ax-ssg.html</loc></url>
 <url><loc>https://ax.axcora.com/index.html</loc></url>
-<url><loc>https://ax.axcora.com/projects/index.html</loc></url>
-<url><loc>https://ax.axcora.com/projects/kedua.html</loc></url>
-<url><loc>https://ax.axcora.com/projects/ketiga.html</loc></url>
-<url><loc>https://ax.axcora.com/projects/pertama.html</loc></url>
 <url><loc>https://ax.axcora.com/tag/automation.html</loc></url>
 <url><loc>https://ax.axcora.com/tag/axcora.html</loc></url>
 <url><loc>https://ax.axcora.com/tag/best-practices.html</loc></url>
@@ -47,5 +44,4 @@
 <url><loc>https://ax.axcora.com/tag/web-development.html</loc></url>
 <url><loc>https://ax.axcora.com/tag/web-trends.html</loc></url>
 <url><loc>https://ax.axcora.com/tags.html</loc></url>
-<url><loc>https://ax.axcora.com/tentang.html</loc></url>
 </urlset>
