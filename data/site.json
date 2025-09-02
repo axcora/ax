@@ -2,7 +2,7 @@
   "title": "AX",
   "name": "Axcora AX Demo",
   "description": "Demo site built with Axcora AX - minimalist static site generator with modern design",
-  "url": "https://axcora-ax-demo.netlify.app",
+  "url": "https://ax.axcora.com",
   "author": "Creativitas Dev & Axcora Team",
   "show_blog_list": "6",
   "nav": [
@@ -12,7 +12,7 @@
     { "title": "About", "url": "/tentang.html" }
   ],
   "social": [
-    { "name": "GitHub", "url": "https://github.com/creativitas-dev/axcora-ax", "icon": "github" },
+    { "name": "GitHub", "url": "https://github.com/sponsors/mesinkasir", "icon": "github" },
     { "name": "Website", "url": "https://axcora.com", "icon": "web" }
   ]
 }
