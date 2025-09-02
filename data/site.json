@@ -14,7 +14,7 @@
   "title": "AX",
   "nav": [
     { "title": "Home", "url": "/" },
-    { "title": "Blog", "url": "/blog.html" },
+    { "title": "Blog", "url": "/blog/" },
     { "title": "Tags", "url": "/tags.html" },
     { "title": "About", "url": "/about.html" }
   ],
