@@ -1,0 +1,13 @@
+<header class="navbar">
+  <a class="navbar-brand" href="{{site.url}}">
+  {{# if site.icon}}<img src="{{site.icon}}" width="40" height="40" alt="{{site.name}}">{{else}}
+  {{site.title}}{{/if}}
+  </a>
+  <nav class="navbar-links" id="navbar-links">
+    {{#each site.nav}}<a href="{{url}}">{{title}}</a>{{/each}}
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme" class="darkmode-btn">🌗</button>
+  <button class="navbar-burger" aria-label="Menu" id="burger" aria-expanded="false" aria-controls="navbar-links">
+    <span></span><span></span><span></span>
+  </button>
+</header>

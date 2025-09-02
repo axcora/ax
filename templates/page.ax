@@ -1,0 +1,10 @@
+---
+layout: layout.ax
+---
+  <section class="static-page">
+    <h1>{{title}}</h1>
+    <div class="content">
+    <h2>{{description}}</h2>
+      <p>{{{content}}}</p>
+    </div>
+  </section>

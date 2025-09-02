@@ -35,6 +35,8 @@
 ```bash
 # Install AX SSG Global
 npm install -g axcora-ax
+# Install AX SSG
+npm i axcora-ax
 ax init myproject
 cd myproject
 ax dev

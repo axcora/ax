@@ -1,0 +1,9 @@
+---
+layout: layout.ax
+---
+<section>
+  <h2>Tag Cloud</h2>
+  <div class="tag-list">
+    {{{ tagCloudHtml }}}
+  </div>
+</section>

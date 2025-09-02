@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{site.lang}}">
+<head>
+<meta charset="utf-8">
+<!-- AX AXCORA_SEO -->
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+{{> nav site=site nav=site.nav}}
+<main>
+{{{ content }}}
+</main>
+<footer class="footer">
+<span id="year"></span> © {{ site.name }} · Powered by <a href="https://ax.axcora.com">AX SSG</a>
+</footer>
+<script src="/assets/js/theme.js"></script>
+</body>
+</html>

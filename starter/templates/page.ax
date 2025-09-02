@@ -1,0 +1,11 @@
+---
+layout: layout.ax
+---
+  <section class="static-page">
+    <h1>{{title}}</h1>
+    <div class="content">
+    {{# if image}}<img src="{{image}}" alt="{{title}}">{{/if}}
+    <h2 class="mt-3 mb-3">{{description}}</h2>
+      <p>{{{content}}}</p>
+    </div>
+  </section>

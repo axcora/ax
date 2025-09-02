@@ -1,0 +1,30 @@
+<article class="card mt-3">
+  <div class="blog-cover">
+      {{#if image}}
+        <a href="/blog/{{slug}}.html">
+        <img src="{{image}}" alt="Cover {{title}}" class="card-image">
+        </a>
+      {{else}}
+        <div class="blog-cover__placeholder">
+          <svg width="100" height="70" fill="none" viewBox="0 0 100 70">
+            <rect width="100" height="70" fill="var(--bg-accent)" rx="11"/>
+            <circle cx="50" cy="35" r="16" fill="var(--accent)"/>
+          </svg>
+        </div>
+      {{/if}}
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">{{title}}</h3>
+      <div class="card-meta">
+        <span>{{date}}</span>
+        {{#if tags}}
+          <span class="blog-tags">{{#each tags}}
+            <span>#{{this}}</span>
+          {{/each}}</span>
+        {{/if}}
+      </div>
+      {{#if description}}
+        <p class="card-desc">{{description}}</p>
+      {{/if}}
+    </div>
+</article>

@@ -1,0 +1,42 @@
+{
+  "name": "axcora-ax",
+  "version": "1.0.2",
+  "description": "Starter static site/blog using axcora-ax generator",
+  "keywords": [    "static-site",
+    "blog",
+    "markdown",
+    "starter",
+    "axcora-ax"
+  ],
+  "homepage": "https://ax.axcora.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axcora/ax.git"
+  },
+  "license": "MIT",
+  "author": "Axcora Team Dev",
+  "contributors": [    {
+      "name": "Creativitas Dev",
+      "url": "https://fiverr.com/creativitas"
+    },
+    {
+      "name": "Axcora Team Developer",
+      "url": "https://ax.axcora.com"
+    }
+  ],
+  "type": "module",
+  "scripts": {
+    "clean": "ax clean",
+    "dev": "ax dev",
+    "build": "ax build",
+    "serve": "ax serve",
+    "start": "ax serve",
+    "test": "echo \"No tests configured\""
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=8.0.0"
+  }
+}
