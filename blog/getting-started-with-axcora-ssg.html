@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<title>Getting Started with AX SSG The Essential Guide | Axcora AX Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="creates a clean folder structure, including directories for your content, templates, assets, and site data.">
+<meta name="author" content="">
+<meta property="og:title" content="Getting Started with AX SSG The Essential Guide | Axcora AX Demo">
+<meta property="og:locale" content="">
+<meta property="locale" content="">
+<meta property="og:description" content="creates a clean folder structure, including directories for your content, templates, assets, and site data.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Getting Started with AX SSG The Essential Guide | Axcora AX Demo">
+<meta name="twitter:description" content="creates a clean folder structure, including directories for your content, templates, assets, and site data.">
+<meta name="twitter:image" content="">
+<meta name="generator" content="AX Axcora ssg"/>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="navbar-brand" href="https://ax.axcora.com">
+  
+  AX
+  </a>
+  <nav class="navbar-links" id="navbar-links">
+    <a href="/">Home</a><a href="/blog.html">Blog</a><a href="/tags.html">Tags</a><a href="/tentang.html">About</a>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme" class="darkmode-btn">🌗</button>
+  <button class="navbar-burger" aria-label="Menu" id="burger" aria-expanded="false" aria-controls="navbar-links">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<main>
+<article class="blog-post">
+  <header>
+    <h1>Getting Started with AX SSG The Essential Guide</h1>
+    <div class="meta">
+    <time datetime="September 02, 2025" style="color:#868eba;font-size:.99em;">September 02, 2025</time>
+      <div style="margin:1em 0;">
+        <span style="margin-right:8px;color:var(--accent)">
+        #tutorial</span><span style="margin-right:8px;color:var(--accent)">
+        #getting started</span><span style="margin-right:8px;color:var(--accent)">
+        #axcora</span><span style="margin-right:8px;color:var(--accent)">
+        #web design</span>
+      </div>
+    </div>
+  </header>
+
+<section class="content">
+<p>Starting a new project with Axcora AX SSG is fast and intuitive. The first step is to install AX via the official CLI and initialize a project skeleton with the <code>ax init &lt;project&gt;</code> command. This creates a clean folder structure, including directories for your content, templates, assets, and site data.</p>
+<p>Inside <code>content/</code>, you will create your pages (for instance, an <code>about.md</code>) and organize blog posts under <code>blog/</code>. All content is written in Markdown, making it easy for writers and editors to contribute. The <code>templates/</code> directory is where your site’s layouts and partials live, written in Handlebars syntax for maximum reusability. AX automatically registers templates and partials, so you don’t need to configure anything manually.</p>
+<p>Add your site configuration to <code>data/site.json</code> or <code>data/site.yml</code>. This holds your title, base URL, description, and other metadata used in your templates. To build your site, simply run <code>ax build</code> in your terminal; your static files will be generated in the <code>dist/</code> directory, ready for deployment.</p>
+<p>Assets such as images and stylesheets are kept in the <code>assets/</code> directory and are automatically copied to <code>dist/assets/</code> when you build. For development, launch the local server with <code>ax dev</code>—your site will update automatically as you make changes.</p>
+<p>In summary, AX SSG is crafted for a hassle-free experience. There is no complicated configuration, no tangled dependency chain—just clean folders, readable code, and instant builds. Whether you&#39;re building a blog or documentation site, Axcora AX SSG is the fastest way to create and deploy static websites in 2025.</p>
+
+</section>
+
+<nav class="post-pagination mb-5">
+  <div class="prev-post">
+      <a href="/blog/handlebars-templates-for-web-creativity.html">
+        ← Handlebars Templates: Unleash Your Creativity with AX SSG
+      </a>
+  </div>
+  <div class="next-post">
+      <a href="/blog/ax-ssg-vs-traditional-generators.html">
+        Axcora AX SSG vs. Traditional Static Site Generators: Key Differences →
+      </a>
+  </div>
+</nav>
+
+  <div class="post-tags mt-5">
+    <strong>Tags:</strong>
+      <a href="/tag/tutorial.html" class="tag-badge">#tutorial</a>
+      <a href="/tag/getting-started.html" class="tag-badge">#getting started</a>
+      <a href="/tag/axcora.html" class="tag-badge">#axcora</a>
+      <a href="/tag/web-design.html" class="tag-badge">#web design</a>
+  </div>
+
+</article>
+</main>
+<footer class="footer">
+<span id="year"></span> © Axcora AX Demo · Powered by <a href="https://ax.axcora.com">AX SSG</a>
+</footer>
+<script src="/assets/js/theme.js"></script>
+</body>
+</html>

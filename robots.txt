@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ax.axcora.com/sitemap.xml
