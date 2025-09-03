@@ -20,7 +20,8 @@
 <meta name="twitter:image" content="/assets/img/logo.png">
 <link href="/assets/img/logo.png" rel="icon" type="image/x-icon">
 <meta name="generator" content="AX Axcora ssg"/>
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
 </head>
 <body><header class="navbar">
   <a class="navbar-brand" href="https://ax.axcora.com">
@@ -40,7 +41,7 @@
 <p>AX SSG by Axcora is the perfect solution for anyone looking to build a static site generator that is both fast and ultra-lightweight. Designed for simplicity, AX SSG does not require any node_modules, making setup instant and performance blazing fast.</p>
 <p>Website speed isn&#x27;t just a technical metric—it&#x27;s a measure of user experience and business impact. Study after study shows that users are less likely to engage, convert, or return to slow websites. Google and other search engines now factor speed heavily into rankings, making fast-loading sites a top priority for SEO.</p>
 </section><section class="ssg-review">
-<h3>Ready for a new standard in static generation?</h3>
+<h2>Ready for a new standard in static generation?</h2>
 <p>With AX SSG you get maximum speed, minimum fuss, and a platform that’s ready for projects of any size—no baggage attached. Whether you’re launching a portfolio, documentation site, or blazing-fast blog, AX SSG keeps things light, powerful, and brilliantly simple.</p>
 <h3>Get Start - Installation</h3>
 <pre><code>
@@ -145,7 +146,7 @@ open http://localhost:3000
       class="card-video-bg"
       viewBox="0 0 400 225"
       width="100%"
-      height="auto"
+      height="225"
       style="display:block;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1"
       preserveAspectRatio="xMidYMid slice"
     >
@@ -244,6 +245,6 @@ open http://localhost:3000
 </section></main><footer class="footer">
 <span id="year"></span> © AX SSG · Powered by <a href="https://ax.axcora.com">AX SSG</a>
 </footer>
-<script src="/assets/js/theme.js"></script>
+<script defer src="/assets/js/theme.js"></script>
 </body>
 </html>
