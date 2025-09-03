@@ -2,7 +2,7 @@
 title: "Static Assets"
 date: "2025-08-28"
 description: "AX SSG Static resources like CSS, JS, images"
-image: "/assets/img/axcora1.jpg"
+image: "/assets/img/ax4.webp"
 tags: 
  - static site generator
  - assets

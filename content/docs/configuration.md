@@ -1,7 +1,7 @@
 ---
 title: "Configuration Your Site"
 date: "2025-09-02"
-image: "/assets/img/axs.jpg"
+image: "/assets/img/ax1.webp"
 description: "Setup and Configuration your website project"
 tags: 
  - static site generator

@@ -1,7 +1,7 @@
 ---
 title: "AX Axcora SEO"
 date: "2025-09-01"
-image: "/assets/img/axs.jpg"
+image: "/assets/img/ax3.webp"
 description: "Auto SEO injection with AX SSG Axcora technology"
 tags: 
  - static site generator

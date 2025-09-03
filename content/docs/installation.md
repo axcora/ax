@@ -1,7 +1,7 @@
 ---
 title: "Quick Start and Installation AX SSG"
 date: "2025-09-03"
-image: "/assets/img/axs.jpg"
+image: "/assets/img/ax2.webp"
 description: "How to first run - install and create new project with Axcora AX SSG"
 tags: 
  - static site generator

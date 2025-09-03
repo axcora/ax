@@ -2,7 +2,7 @@
 title: "Content and Collections"
 date: "2025-08-30"
 description: "Create content for blog post or static pages"
-image: "/assets/img/axcora1.jpg"
+image: "/assets/img/ax5.webp"
 tags: 
  - static site generator
  - content

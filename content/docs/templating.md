@@ -2,7 +2,7 @@
 title: "AX SSG Templating"
 date: "2025-08-29"
 description: "Tempating AX Axcora Static Site Generator"
-image: "/assets/img/axcora1.jpg"
+image: "/assets/img/ax6.webp"
 tags: 
  - static site generator
  - templating
