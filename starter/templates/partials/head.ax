@@ -3,5 +3,6 @@
 <head>
 <meta charset="utf-8">
 <!-- AX AXCORA_SEO -->
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
 </head>

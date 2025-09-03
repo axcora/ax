@@ -1,5 +1,5 @@
 <section class="ssg-review">
-<h3>{{start.title}}</h3>
+<h2>{{start.title}}</h2>
 <p>{{start.text}}</p>
 <h3>{{start.command.title}}</h3>
 <pre><code>{{#each start.command.run}}
