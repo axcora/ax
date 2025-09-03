@@ -2,30 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>This is index | AX SSG</title>
+<meta name="google-site-verification" content="fJTzwsNcz2AtRxQpJZzU7db7TLPdR_lKSAXfyWDtHB4">
+<meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0">
+<title>AX New Modern Static Site Generator | AX SSG</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="About Description index">
+<meta name="description" content="AX SSG by Axcora is the perfect solution for anyone looking to build a static site generator that is both fast and ultra-lightweight. Designed for simplicity, AX SSG does not require any node_modules, making setup instant and performance blazing fast.">
 <meta name="author" content="Axcora Team">
-<meta property="og:title" content="This is index | AX SSG">
+<meta property="og:title" content="AX New Modern Static Site Generator | AX SSG">
 <meta property="og:locale" content="en-US">
 <meta property="locale" content="en-US">
-<meta property="og:description" content="About Description index">
+<meta property="og:description" content="AX SSG by Axcora is the perfect solution for anyone looking to build a static site generator that is both fast and ultra-lightweight. Designed for simplicity, AX SSG does not require any node_modules, making setup instant and performance blazing fast.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/assets/img/logo.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="This is index | AX SSG">
-<meta name="twitter:description" content="About Description index">
+<meta name="twitter:title" content="AX New Modern Static Site Generator | AX SSG">
+<meta name="twitter:description" content="AX SSG by Axcora is the perfect solution for anyone looking to build a static site generator that is both fast and ultra-lightweight. Designed for simplicity, AX SSG does not require any node_modules, making setup instant and performance blazing fast.">
 <meta name="twitter:image" content="/assets/img/logo.png">
+<link href="/assets/img/logo.png" rel="icon" type="image/x-icon">
 <meta name="generator" content="AX Axcora ssg"/>
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
-<header class="navbar">
+<body><header class="navbar">
   <a class="navbar-brand" href="https://ax.axcora.com">
   <img src="/assets/img/logo.png" width="40" height="40" alt="AX SSG">
   </a>
   <nav class="navbar-links" id="navbar-links">
-    <a href="/">Home</a><a href="/blog/">Blog</a><a href="/tags.html">Tags</a><a href="/about.html">About</a>
+    <a href="/">Home</a><a href="/about.html">About</a><a href="/docs/">Docs</a><a href="/blog/">Blog</a><a href="#support">Support</a><a href="https://github.com/sponsors/mesinkasir">Github</a>
   </nav>
   <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme" class="darkmode-btn">🌗</button>
   <button class="navbar-burger" aria-label="Menu" id="burger" aria-expanded="false" aria-controls="navbar-links">
@@ -34,70 +36,212 @@
 </header>
 <main>
 <section class="landing">
-  <h1>This is index</h1>
-  <p>About Description index</p>
-</section>
+<h1>AX New Modern Static Site Generator</h1>
+<p>AX SSG by Axcora is the perfect solution for anyone looking to build a static site generator that is both fast and ultra-lightweight. Designed for simplicity, AX SSG does not require any node_modules, making setup instant and performance blazing fast.</p>
+<p>Website speed isn&#x27;t just a technical metric—it&#x27;s a measure of user experience and business impact. Study after study shows that users are less likely to engage, convert, or return to slow websites. Google and other search engines now factor speed heavily into rankings, making fast-loading sites a top priority for SEO.</p>
+</section><section class="ssg-review">
+<h3>Ready for a new standard in static generation?</h3>
+<p>With AX SSG you get maximum speed, minimum fuss, and a platform that’s ready for projects of any size—no baggage attached. Whether you’re launching a portfolio, documentation site, or blazing-fast blog, AX SSG keeps things light, powerful, and brilliantly simple.</p>
+<h3>Get Start - Installation</h3>
+<pre><code>
+npm install -g axcora-ax
 
+ax init myproject
+
+cd my project
+
+ax dev
+
+open http://localhost:3000
+</code></pre>
+<h3>Or Use Starter Project</h3>
+<pre><code>
+git clone https://github.com/mesinkasir/ax-starter.git
+
+cd ax-starter
+
+npm run dev
+
+open http://localhost:3000
+</code></pre>
+</section><section>
+<h2><strong><a href="/">Why Is AX SSG Faster Without node_modules?</a></strong></h2>
+<p>AX SSG is a static site generator specifically crafted for <em>speed and simplicity</em>—it <strong>does not require a node_modules directory at all</strong>. Unlike other SSGs, which normally rely on installing hundreds of megabytes of dependencies and Node.js packages, AX SSG operates with only minimal JavaScript and no extra installation steps.</p>
+<p><strong>What does this mean for you?</strong><br>With this architecture, your website can be built and deployed <em>instantly</em>—you just copy the files and go. There’s no overhead or baggage: AX SSG works right out of the box on any static host or CDN, and even the simplest server setup is enough.</p>
+<p><strong>What makes AX SSG stand out?</strong></p>
+<ul>
+<li><p><strong>No build tools or transpilers required:</strong><br>AX SSG doesn’t rely on webpack, Babel, or any compilation process. It builds your site directly from source files, so you get blazing fast results every time.</p>
+</li>
+<li><p><strong>Instant setup:</strong><br>Just copy the SSG files and your project—no dependency installation, no technical headaches. It&#39;s perfect for beginners who want it simple, and professionals who need instant results.</p>
+</li>
+<li><p><strong>Extremely lightweight:</strong><br>Since there’s <em>no node_modules, no cache, and no heavy processes</em> either locally or on your server, AX SSG is resource efficient and runs seamlessly on anything.</p>
+</li>
+<li><p><strong>Flexible content support:</strong><br>You can use Markdown, JSON, or YAML straight out of the box—empowering you to write content your way.</p>
+</li>
+<li><p><strong>Automatic collections:</strong><br>Content is organized and paginated automatically, saving you time and ensuring scalability for blogs or documentation.</p>
+</li>
+<li><p><strong>Auto SEO injection:</strong><br>AX SSG automatically adds meta tags, Open Graph, and Twitter Cards—optimizing your content for social sharing and discoverability without manual work.</p>
+</li>
+<li><p><strong>Ready to use:</strong><br>There’s no complex configuration or learning curve. Start building sites straight away and enjoy true plug-and-play convenience.</p>
+</li>
+</ul>
+<blockquote>
+<p>“Most modern SSGs depend on large node_modules folders—fine for complex projects, but <em>overkill</em> for static websites. By removing all dependency bloat, AX SSG empowers you to build and deploy instantly, making fast web delivery truly accessible at any scale.”</p>
+</blockquote>
+
+</section><h2>Documentation</h2>
 <section class="blog-list">
 <article class="card">
-<img src="/assets/img/ax.jpg" alt="image Automate Your SEO: Sitemaps, RSS, and Robots with AX SSG" class="card-image">
+<a href="/docs/installation.html"><img src="/assets/img/axs.jpg" alt="image Quick Start and Installation AX SSG" class="card-image"></a>
 <div class="card-content">
-<h2 class="card-title"><a href="/blog/automate-your-seo-with-ax-ssg-by-axcora.html">Automate Your SEO: Sitemaps, RSS, and Robots with AX SSG</a></h2>
-<p class="card-meta">Author:  </p>
-<p class="card-desc">You don’t have to manually update routes or worry about missing links—AX handles everything dynamically from your folder structure.</p>
-<a href="/blog/automate-your-seo-with-ax-ssg-by-axcora.html" class="card-readmore">Read Automate Your SEO: Sitemaps, RSS, and Robots with AX SSG</a>
+<h2 class="card-title"><a href="/docs/installation.html">Quick Start and Installation AX SSG</a></h2>
+<p class="card-desc">How to first run - install and create new project with Axcora AX SSG</p>
+<a href="/docs/installation.html" class="card-readmore">Read Quick Start and Installation AX SSG</a>
 </div>
 </article>
 <article class="card">
-<img src="/assets/img/axs.jpg" alt="image Axcora AX SSG vs. Traditional Static Site Generators: Key Differences" class="card-image">
+<a href="/docs/configuration.html"><img src="/assets/img/axs.jpg" alt="image Configuration Your Site" class="card-image"></a>
 <div class="card-content">
-<h2 class="card-title"><a href="/blog/ax-ssg-vs-traditional-generators.html">Axcora AX SSG vs. Traditional Static Site Generators: Key Differences</a></h2>
-<p class="card-meta">Author:  </p>
-<p class="card-desc">Axcora AX SSG takes a refreshing approach. It is streamlined, requiring only essential JavaScript libraries and no node_modules folder at all</p>
-<a href="/blog/ax-ssg-vs-traditional-generators.html" class="card-readmore">Read Axcora AX SSG vs. Traditional Static Site Generators: Key Differences</a>
+<h2 class="card-title"><a href="/docs/configuration.html">Configuration Your Site</a></h2>
+<p class="card-desc">Setup and Configuration your website project</p>
+<a href="/docs/configuration.html" class="card-readmore">Read Configuration Your Site</a>
 </div>
 </article>
 <article class="card">
-<img src="/assets/img/axs.jpg" alt="image Getting Started with AX SSG The Essential Guide" class="card-image">
+<a href="/docs/seo.html"><img src="/assets/img/axs.jpg" alt="image AX Axcora SEO" class="card-image"></a>
 <div class="card-content">
-<h2 class="card-title"><a href="/blog/getting-started-with-axcora-ssg.html">Getting Started with AX SSG The Essential Guide</a></h2>
-<p class="card-meta">Author:  </p>
-<p class="card-desc">creates a clean folder structure, including directories for your content, templates, assets, and site data.</p>
-<a href="/blog/getting-started-with-axcora-ssg.html" class="card-readmore">Read Getting Started with AX SSG The Essential Guide</a>
+<h2 class="card-title"><a href="/docs/seo.html">AX Axcora SEO</a></h2>
+<p class="card-desc">Auto SEO injection with AX SSG Axcora technology</p>
+<a href="/docs/seo.html" class="card-readmore">Read AX Axcora SEO</a>
 </div>
 </article>
 <article class="card">
-<img src="/assets/img/axcora1.jpg" alt="image Handlebars Templates: Unleash Your Creativity with AX SSG" class="card-image">
+<a href="/docs/content.html"><img src="/assets/img/axcora1.jpg" alt="image Content and Collections" class="card-image"></a>
 <div class="card-content">
-<h2 class="card-title"><a href="/blog/handlebars-templates-for-web-creativity.html">Handlebars Templates: Unleash Your Creativity with AX SSG</a></h2>
-<p class="card-meta">Author:  </p>
-<p class="card-desc">Axcora AX SSG uses Handlebars as its template engine, offering a familiar and powerful way to create flexible page layouts.</p>
-<a href="/blog/handlebars-templates-for-web-creativity.html" class="card-readmore">Read Handlebars Templates: Unleash Your Creativity with AX SSG</a>
+<h2 class="card-title"><a href="/docs/content.html">Content and Collections</a></h2>
+<p class="card-desc">Create content for blog post or static pages</p>
+<a href="/docs/content.html" class="card-readmore">Read Content and Collections</a>
 </div>
 </article>
 <article class="card">
-<img src="/assets/img/ax.jpg" alt="image Open Source and Community-Driven: The Future of AX Cora SSG" class="card-image">
+<a href="/docs/templating.html"><img src="/assets/img/axcora1.jpg" alt="image AX SSG Templating" class="card-image"></a>
 <div class="card-content">
-<h2 class="card-title"><a href="/blog/open-source-and-community-driven.html">Open Source and Community-Driven: The Future of AX Cora SSG</a></h2>
-<p class="card-meta">Author:  </p>
-<p class="card-desc">Axcora AX SSG proudly embraces this philosophy with an open-source core and accessible development model.</p>
-<a href="/blog/open-source-and-community-driven.html" class="card-readmore">Read Open Source and Community-Driven: The Future of AX Cora SSG</a>
+<h2 class="card-title"><a href="/docs/templating.html">AX SSG Templating</a></h2>
+<p class="card-desc">Tempating AX Axcora Static Site Generator</p>
+<a href="/docs/templating.html" class="card-readmore">Read AX SSG Templating</a>
 </div>
 </article>
 <article class="card">
-<img src="/assets/img/axcora.jpg" alt="image Simple Content Management with Markdown and AX SSG" class="card-image">
+<a href="/docs/static.html"><img src="/assets/img/axcora1.jpg" alt="image Static Assets" class="card-image"></a>
 <div class="card-content">
-<h2 class="card-title"><a href="/blog/simple-content-management-with-markdown.html">Simple Content Management with Markdown and AX SSG</a></h2>
-<p class="card-meta">Author:  </p>
-<p class="card-desc"> AX Static Site Generator automatically generates collection posts, paginates blogs, and produces tag archives—there’s no need for additional plugins or scripts.</p>
-<a href="/blog/simple-content-management-with-markdown.html" class="card-readmore">Read Simple Content Management with Markdown and AX SSG</a>
+<h2 class="card-title"><a href="/docs/static.html">Static Assets</a></h2>
+<p class="card-desc">AX SSG Static resources like CSS, JS, images</p>
+<a href="/docs/static.html" class="card-readmore">Read Static Assets</a>
 </div>
 </article>
+</section><section>
+  <article class="card" style="padding:0;position:relative;overflow:hidden;">
+    <svg
+      class="card-video-bg"
+      viewBox="0 0 400 225"
+      width="100%"
+      height="auto"
+      style="display:block;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1"
+      preserveAspectRatio="xMidYMid slice"
+    >
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#27a2d8">
+            <animate attributeName="stop-color" values="#27a2d8;#16e0a8;#27a2d8" dur="8s" repeatCount="indefinite"/>
+          </stop>
+          <stop offset="100%" stop-color="#ff686b">
+            <animate attributeName="stop-color" values="#ff686b;#ffe066;#ff686b" dur="8s" repeatCount="indefinite"/>
+          </stop>
+        </linearGradient>
+      </defs>
+      <rect width="400" height="225" fill="url(#g1)" />
+      <g>
+        <path id="wave" fill="#fff" fill-opacity="0.18">
+          <animate attributeName="d"
+            dur="8s"
+            repeatCount="indefinite"
+            values="
+              M0,80 C90,120 310,40 400,100 V225 H0 Z;
+              M0,100 C80,40 320,120 400,80 V225 H0 Z;
+              M0,80 C90,120 310,40 400,100 V225 H0 Z
+            " />
+        </path>
+      </g>
+    </svg>
+    <div class="card-content" style="position:relative;z-index:2;">
+      <div class="card-title">Need a web developer?</div>
+      <div class="card-desc">Hey! Need help with web development? I’m available and excited to contribute—just let me know what your project needs!</div>
+      <a class="card-readmore" href="mailto:axcora@gmail.com">Contact Me</a>
+    </div>
+  </article>
+</section><section class="feature-grid">
+<h2>The Axcora Projects</h2>
+<div class="grid-list-2">
+<div class="grid-card"><a href="https://ssg.axcora.com" target="_blank">
+<img src="/assets/img/logo.jpg" alt="" />
+<h3>AXCORA SSG</h3>
+<p>All-in-One Static Site Generator &amp; CSS Framework - Build beautiful, responsive websites with our modern static site generator ,commplete CSS framework with the components, automatic build system, and dark mode support</p>
+</a>
+</div>
+<div class="grid-card"><a href="https://markdownuts.axcora.com/" target="_blank">
+<img src="https://markdownuts.axcora.com/img/OEZrId9vLY-1024.avif" alt="" />
+<h3>MARKDOWNUTS</h3>
+<p>Next Generation PHP website work with YAML and Markdown,A flatfile CMS - alternative static site generator</p>
+</a>
+</div>
+</div>
 </section>
-
-
-</main>
-<footer class="footer">
+<section class="feature-grid" id="support">
+  <h2>Buy me a Coffee</h2>
+  <div class="grid-list">
+    <div class="grid-card">
+    <a href="https://github.com/sponsors/mesinkasir">
+    <svg viewBox="0 0 40 40" width="52" height="52" fill="none" aria-label="Github" style="margin-bottom:9px;">
+  <path fill="#778595ff" d="M20 3.5C10.34 3.5 2.5 11.34 2.5 21.06c0 7.8 5.05 14.44 12.06 16.79.88.17 1.2-.37 1.2-.83 0-.41-.02-1.78-.03-3.23-4.9 1.07-5.94-2.36-5.94-2.36-.8-2.03-1.94-2.57-1.94-2.57-1.58-1.08.12-1.06.12-1.06 1.76.13 2.7 1.81 2.7 1.81 1.55 2.66 4.07 1.89 5.07 1.45.16-1.13.61-1.9 1.11-2.33-3.9-.44-8.01-1.95-8.01-8.66 0-1.92.67-3.49 1.77-4.72-.18-.44-.77-2.24.17-4.66 0 0 1.46-.48 4.79 1.8 1.4-.39 2.9-.58 4.39-.59 1.49.01 2.99.2 4.39.59 3.32-2.28 4.78-1.8 4.78-1.8.94 2.42.35 4.22.17 4.66 1.1 1.23 1.77 2.8 1.77 4.72 0 6.72-4.11 8.22-8.03 8.65.63.54 1.2 1.61 1.2 3.25 0 2.35-.02 4.25-.02 4.82 0 .47.32 1.01 1.21.84C32.46 35.49 37.5 28.87 37.5 21.06 37.5 11.34 29.66 3.5 20 3.5Z"/>
+</svg>
+      <h3>Github</h3>
+      <p>Via Github.</p>
+      </a>
+    </div>
+    <div class="grid-card">
+    <a href="https://creativitaz.gumroad.com/coffee">
+    <svg viewBox="0 0 64 64" width="52" height="52" aria-label="Gumroad" style="margin-bottom: 9px;" fill="none">
+  <defs>
+    <radialGradient id="gumroad_grad" cx="50%" cy="40%" r="70%" fx="40%" fy="30%">
+      <stop offset="0%" stop-color="#e686e8ff"/>
+      <stop offset="45%" stop-color="#fc9ac8ff"/>
+      <stop offset="100%" stop-color="#fb78ffff"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="28" fill="url(#gumroad_grad)"/>
+  <text x="50%" y="53%" text-anchor="middle" alignment-baseline="middle" 
+        font-size="32" font-family="Tahoma, sans-serif" 
+        font-weight="bold" fill="#250606ff" style="letter-spacing:0.06em;">
+    G
+  </text>
+</svg>
+      <h3>Gumroad</h3>
+      <p>Via Gumroad.</p>
+      </a>
+    </div>
+    <div class="grid-card">
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd&#x3D;_s-xclick&amp;hosted_button_id&#x3D;JVZVXBC4N9DAN">
+      <svg viewBox="0 0 24 24" width="52" height="52" fill="none" aria-label="Paypal" style="margin-bottom:9px;">
+        <rect width="24" height="24" rx="8" fill="#0e5c98ff"/>
+        <path d="M8 17.5l1.2-10.5c.07-.58.56-1 1.14-1H16c1.1 0 2 .9 2 2 0 3.87-2.62 7-6 7h-2.13l-.39 2.5z" fill="#fff"/>
+        <path d="M15.5 9.5c0-1.1-.9-2-2-2h-3.66c-.55 0-.92.49-.99.97L7.06 18c-.04.27.18.5.46.5h2.18l.4-2.5H11c3.38 0 6-3.13 6-7z" fill="#FFC43A"/>
+      </svg>
+      <h3>Paypal</h3>
+      <p>Via Paypal.</p>
+      </a>
+    </div>
+  </div>
+</section></main><footer class="footer">
 <span id="year"></span> © AX SSG · Powered by <a href="https://ax.axcora.com">AX SSG</a>
 </footer>
 <script src="/assets/js/theme.js"></script>

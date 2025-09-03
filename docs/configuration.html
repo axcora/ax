@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="google-site-verification" content="fJTzwsNcz2AtRxQpJZzU7db7TLPdR_lKSAXfyWDtHB4">
 <meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0">
-<title>Tag: web design | AX SSG</title>
+<title>Configuration Your Site | AX SSG</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Posts tagged with "web design"">
+<meta name="description" content="Setup and Configuration your website project">
 <meta name="author" content="Axcora Team">
-<meta property="og:title" content="Tag: web design | AX SSG">
+<meta property="og:title" content="Configuration Your Site | AX SSG">
 <meta property="og:locale" content="en-US">
 <meta property="locale" content="en-US">
-<meta property="og:description" content="Posts tagged with "web design"">
+<meta property="og:description" content="Setup and Configuration your website project">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/assets/img/logo.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tag: web design | AX SSG">
-<meta name="twitter:description" content="Posts tagged with "web design"">
+<meta name="twitter:title" content="Configuration Your Site | AX SSG">
+<meta name="twitter:description" content="Setup and Configuration your website project">
 <meta name="twitter:image" content="/assets/img/logo.png">
 <link href="/assets/img/logo.png" rel="icon" type="image/x-icon">
 <meta name="generator" content="AX Axcora ssg"/>
@@ -36,36 +36,68 @@
   </button>
 </header>
 <main>
-<h1 class="text-center">Tag: web design</h1>
-<section>
-<article class="card mt-3">
-  <div class="blog-cover">
-        <a href="/blog/getting-started-with-axcora-ssg.html">
-        <img src="/assets/img/axs.jpg" alt="Cover Getting Started with AX SSG The Essential Guide" class="card-image">
-        </a>
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">Getting Started with AX SSG The Essential Guide</h3>
-      <div class="card-meta">
-        <span>September 03, 2025</span>
-          <span class="blog-tags">
-            <span>#tutorial</span>
-          
-            <span>#getting started</span>
-          
-            <span>#axcora</span>
-          
-            <span>#web design</span>
-          </span>
-      </div>
-        <p class="card-desc">creates a clean folder structure, including directories for your content, templates, assets, and site data.</p>
-    </div>
-</article>
+<article class="blog-post">
+  <header>
+    <h1>Configuration Your Site</h1>
+    <div class="meta mb-3"><small>
+    <time datetime="September 03, 2025">September 03, 2025</time>
+    | by <a href="https://ax.axcora.com">Axcora Team</a>
+    </small></div>
+  </header>
+<img src="/assets/img/axs.jpg" alt="Configuration Your Site">
+<section class="content">
+<h3><a href="/docs/configuration.html">Setup and Configuration</a></h3>
+<p>For first you need to setup your website project, open on <code>data/site.json</code> and update it.</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;AX SSG&quot;,
+  &quot;lang&quot;: &quot;en&quot;,
+  &quot;locale&quot;: &quot;en-US&quot;,
+  &quot;description&quot;: &quot;Demo site built with AX SSG - minimalist static site generator with modern design - by Axcora tech&quot;,
+  &quot;url&quot;: &quot;http://localhost:3000&quot;,
+  &quot;icon&quot;: &quot;/assets/img/logo.png&quot;,
+  &quot;author&quot;: {
+              &quot;name&quot;: &quot;Axcora Team&quot;, 
+              &quot;url&quot;: &quot;https://ax.axcora.com&quot; 
+   },
+  &quot;blog_list_title&quot;: &quot;The Blog&quot;,
+  &quot;show_blog_list&quot;: &quot;6&quot;,
+  &quot;title&quot;: &quot;AX&quot;,
+  &quot;nav&quot;: [
+    { &quot;title&quot;: &quot;Home&quot;, &quot;url&quot;: &quot;/&quot; },
+    { &quot;title&quot;: &quot;Blog&quot;, &quot;url&quot;: &quot;/blog/&quot; },
+    { &quot;title&quot;: &quot;Tags&quot;, &quot;url&quot;: &quot;/tags.html&quot; },
+    { &quot;title&quot;: &quot;About&quot;, &quot;url&quot;: &quot;/about.html&quot; }
+  ],
+  &quot;social&quot;: [
+    { &quot;name&quot;: &quot;GitHub&quot;, &quot;url&quot;: &quot;https://github.com/sponsors/mesinkasir/&quot;},
+    { &quot;name&quot;: &quot;Website&quot;, &quot;url&quot;: &quot;https://ax.axcora.com/&quot; }
+  ]
+}
+</code></pre>
+
 </section>
-<nav class="pagination">
-<span>From  of </span>
+
+<nav class="post-pagination mb-5">
+  <div class="prev-post">
+      <a href="/docs/seo.html">
+        ← AX Axcora SEO
+      </a>
+  </div>
+  <div class="next-post">
+      <a href="/docs/installation.html">
+        Quick Start and Installation AX SSG →
+      </a>
+  </div>
 </nav>
 
+  <div class="post-tags mt-5">
+    <strong>Tags:</strong>
+      <a href="/tag/static-site-generator.html" class="tag-badge">#static site generator</a>
+      <a href="/tag/configuration.html" class="tag-badge">#configuration</a>
+      <a href="/tag/setup.html" class="tag-badge">#setup</a>
+  </div>
+
+</article>
 <section class="feature-grid" id="support">
   <h2>Buy me a Coffee</h2>
   <div class="grid-list">

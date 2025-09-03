@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="google-site-verification" content="fJTzwsNcz2AtRxQpJZzU7db7TLPdR_lKSAXfyWDtHB4">
 <meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0">
-<title>Tag: web design | AX SSG</title>
+<title>Quick Start and Installation AX SSG | AX SSG</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Posts tagged with "web design"">
+<meta name="description" content="How to first run - install and create new project with Axcora AX SSG">
 <meta name="author" content="Axcora Team">
-<meta property="og:title" content="Tag: web design | AX SSG">
+<meta property="og:title" content="Quick Start and Installation AX SSG | AX SSG">
 <meta property="og:locale" content="en-US">
 <meta property="locale" content="en-US">
-<meta property="og:description" content="Posts tagged with "web design"">
+<meta property="og:description" content="How to first run - install and create new project with Axcora AX SSG">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/assets/img/logo.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tag: web design | AX SSG">
-<meta name="twitter:description" content="Posts tagged with "web design"">
+<meta name="twitter:title" content="Quick Start and Installation AX SSG | AX SSG">
+<meta name="twitter:description" content="How to first run - install and create new project with Axcora AX SSG">
 <meta name="twitter:image" content="/assets/img/logo.png">
 <link href="/assets/img/logo.png" rel="icon" type="image/x-icon">
 <meta name="generator" content="AX Axcora ssg"/>
@@ -36,36 +36,110 @@
   </button>
 </header>
 <main>
-<h1 class="text-center">Tag: web design</h1>
-<section>
-<article class="card mt-3">
-  <div class="blog-cover">
-        <a href="/blog/getting-started-with-axcora-ssg.html">
-        <img src="/assets/img/axs.jpg" alt="Cover Getting Started with AX SSG The Essential Guide" class="card-image">
-        </a>
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">Getting Started with AX SSG The Essential Guide</h3>
-      <div class="card-meta">
-        <span>September 03, 2025</span>
-          <span class="blog-tags">
-            <span>#tutorial</span>
-          
-            <span>#getting started</span>
-          
-            <span>#axcora</span>
-          
-            <span>#web design</span>
-          </span>
-      </div>
-        <p class="card-desc">creates a clean folder structure, including directories for your content, templates, assets, and site data.</p>
-    </div>
-</article>
+<article class="blog-post">
+  <header>
+    <h1>Quick Start and Installation AX SSG</h1>
+    <div class="meta mb-3"><small>
+    <time datetime="September 03, 2025">September 03, 2025</time>
+    | by <a href="https://ax.axcora.com">Axcora Team</a>
+    </small></div>
+  </header>
+<img src="/assets/img/axs.jpg" alt="Quick Start and Installation AX SSG">
+<section class="content">
+<h3>Quick Start</h3>
+<ol>
+<li><strong>Install Node.js</strong> (v20 or higher).</li>
+<li><strong>Install AX SSG Globaly</strong></li>
+<li><strong>No npm modules needed</strong>—AX SSG runs out of the box.</li>
+</ol>
+<h3><a href="/docs/installation.html">Installation and Run Your Project</a></h3>
+<p>Using AX CLI</p>
+<pre><code class="language-bash"># Install AX SSG
+npm install -g axcora-ax
+
+# Create new project
+ax init myproject
+
+# Access your project
+cd myproject
+
+# Run project
+ax dev
+
+# Open web browser http://localhost:3000
+
+# Build your site (outputs to /dist)
+ax build
+
+# Serve built site via local HTTP server
+ax serve
+
+# Clean up all generated files
+ax clean
+</code></pre>
+<p>Using Npm</p>
+<pre><code class="language-bash"># Clone starter project
+git clone https://github.com/mesinkasir/ax-starter.git
+
+# Open starter project
+cd ax-starter
+
+# Build Your project
+npm run build
+
+# Run your project
+npm run dev
+
+# Open web browser http://localhost:3000
+
+# build for production and upload dist folder into your host
+npm run build
+
+# Serve built site via local HTTP server
+npm run serve
+
+# Clean up all generated files
+npm run clean
+</code></pre>
+<h2>Extensibility</h2>
+<ul>
+<li>Add custom templates or layouts by dropping <code>.ax</code>/<code>.html</code> files into <code>templates/</code>.</li>
+<li>Customize navigation or social links inside <code>data/site.json</code>.</li>
+<li>Easily import any CSS/JS by editing <code>assets/</code> and templates.</li>
+</ul>
+<hr>
+<h2>Use Cases</h2>
+<ul>
+<li>Personal and team blogs</li>
+<li>Marketing and promo landing pages</li>
+<li>Documentation</li>
+<li>Lightweight public sites where performance, SEO, and ease-of-use matter</li>
+</ul>
+<hr>
+<p>For a detailed guide and examples, visit <strong>Axcora&#39;s official SSG site</strong> and component documentation[3][1].</p>
+<p><strong>AX SSG</strong> is released under the MIT License and welcomes contributions and feedback.</p>
+
 </section>
-<nav class="pagination">
-<span>From  of </span>
+
+<nav class="post-pagination mb-5">
+  <div class="prev-post">
+      <a href="/docs/configuration.html">
+        ← Configuration Your Site
+      </a>
+  </div>
+  <div class="next-post">
+  </div>
 </nav>
 
+  <div class="post-tags mt-5">
+    <strong>Tags:</strong>
+      <a href="/tag/static-site-generator.html" class="tag-badge">#static site generator</a>
+      <a href="/tag/installation.html" class="tag-badge">#installation</a>
+      <a href="/tag/create-new-project.html" class="tag-badge">#create new project</a>
+      <a href="/tag/initial.html" class="tag-badge">#initial</a>
+  </div>
+
+</article>
 <section class="feature-grid" id="support">
   <h2>Buy me a Coffee</h2>
   <div class="grid-list">

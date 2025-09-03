@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="google-site-verification" content="fJTzwsNcz2AtRxQpJZzU7db7TLPdR_lKSAXfyWDtHB4">
 <meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0">
-<title>Tag: web design | AX SSG</title>
+<title>Content and Collections | AX SSG</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Posts tagged with "web design"">
+<meta name="description" content="Create content for blog post or static pages">
 <meta name="author" content="Axcora Team">
-<meta property="og:title" content="Tag: web design | AX SSG">
+<meta property="og:title" content="Content and Collections | AX SSG">
 <meta property="og:locale" content="en-US">
 <meta property="locale" content="en-US">
-<meta property="og:description" content="Posts tagged with "web design"">
+<meta property="og:description" content="Create content for blog post or static pages">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/assets/img/logo.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tag: web design | AX SSG">
-<meta name="twitter:description" content="Posts tagged with "web design"">
+<meta name="twitter:title" content="Content and Collections | AX SSG">
+<meta name="twitter:description" content="Create content for blog post or static pages">
 <meta name="twitter:image" content="/assets/img/logo.png">
 <link href="/assets/img/logo.png" rel="icon" type="image/x-icon">
 <meta name="generator" content="AX Axcora ssg"/>
@@ -36,36 +36,73 @@
   </button>
 </header>
 <main>
-<h1 class="text-center">Tag: web design</h1>
-<section>
-<article class="card mt-3">
-  <div class="blog-cover">
-        <a href="/blog/getting-started-with-axcora-ssg.html">
-        <img src="/assets/img/axs.jpg" alt="Cover Getting Started with AX SSG The Essential Guide" class="card-image">
-        </a>
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">Getting Started with AX SSG The Essential Guide</h3>
-      <div class="card-meta">
-        <span>September 03, 2025</span>
-          <span class="blog-tags">
-            <span>#tutorial</span>
-          
-            <span>#getting started</span>
-          
-            <span>#axcora</span>
-          
-            <span>#web design</span>
-          </span>
-      </div>
-        <p class="card-desc">creates a clean folder structure, including directories for your content, templates, assets, and site data.</p>
-    </div>
-</article>
+<article class="blog-post">
+  <header>
+    <h1>Content and Collections</h1>
+    <div class="meta mb-3"><small>
+    <time datetime="September 03, 2025">September 03, 2025</time>
+    | by <a href="https://ax.axcora.com">Axcora Team</a>
+    </small></div>
+  </header>
+<img src="/assets/img/axcora1.jpg" alt="Content and Collections">
+<section class="content">
+<h2><a href="/docs/content.html">Content and Collections</a></h2>
+<ul>
+<li>All <strong>blog posts</strong> are markdown files under <code>content/blog/</code>, with YAML/JSON frontmatter for title, description, image, tags, etc.</li>
+<li><strong>Static pages</strong> live in <code>content/pages/</code>.</li>
+<li>Content files receive auto-generated slugs, excerpts, and can specify custom layouts.</li>
+</ul>
+<p><strong>Example markdown frontmatter:</strong></p>
+<pre><code class="language-markdown">---
+title: &quot;Your Blog Post Title&quot;
+description: &quot;A short SEO-friendly description.&quot;
+date: &quot;2025-08-11&quot;
+image: &quot;/assets/img/example.jpg&quot;
+tags: [javascript, ssg, axcora]
+---
+Your post content in markdown here...
+</code></pre>
+<p>or you can use markdown tags with this structures</p>
+<pre><code class="language-markdown">---
+title: &quot;Your Blog Post Title&quot;
+description: &quot;A short SEO-friendly description.&quot;
+date: &quot;2025-08-11&quot;
+image: &quot;/assets/img/example.jpg&quot;
+tags: 
+ - static site generator
+ - content
+ - static page
+ - blog
+ - collections
+---
+Your post content in markdown here...
+</code></pre>
+
 </section>
-<nav class="pagination">
-<span>From  of </span>
+
+<nav class="post-pagination mb-5">
+  <div class="prev-post">
+      <a href="/docs/templating.html">
+        ← AX SSG Templating
+      </a>
+  </div>
+  <div class="next-post">
+      <a href="/docs/seo.html">
+        AX Axcora SEO →
+      </a>
+  </div>
 </nav>
 
+  <div class="post-tags mt-5">
+    <strong>Tags:</strong>
+      <a href="/tag/static-site-generator.html" class="tag-badge">#static site generator</a>
+      <a href="/tag/content.html" class="tag-badge">#content</a>
+      <a href="/tag/static-page.html" class="tag-badge">#static page</a>
+      <a href="/tag/blog.html" class="tag-badge">#blog</a>
+      <a href="/tag/collections.html" class="tag-badge">#collections</a>
+  </div>
+
+</article>
 <section class="feature-grid" id="support">
   <h2>Buy me a Coffee</h2>
   <div class="grid-list">

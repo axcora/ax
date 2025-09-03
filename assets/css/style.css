@@ -242,13 +242,13 @@ header.navbar {
 pre, pre code {
   font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
   font-size: 1em;
-  line-height: 1.7;
+  line-height: 1.2;
   background: #1b222f;
   color: #abb2bf;
   border-radius: 0.75em;
-  padding: 1.2em;
+  padding: 1.0em;
   box-shadow: 0 4px 18px -4px rgba(12, 14, 28, 0.17);
-  margin: 2em 0 2em 0;
+  margin: 1em 0 1em 0;
   overflow-x: auto;
   display: block;
   /* VSCode side-line mimic */
@@ -273,6 +273,49 @@ pre::-webkit-scrollbar-thumb {
   background: #474f61;
   border-radius: 7px;
 }
+/* Feature Grid Section */
+.feature-grid {
+  margin: 2.7em 0;
+}
+.feature-grid h2 {
+  color: var(--color-accent2);
+  font-size: 1.27em;
+  margin-bottom: 1em;
+}
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+.grid-list-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+@media (max-width: 900px) {
+  .grid-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .grid-list { grid-template-columns: 1fr; gap: 1.2em; }
+}
+.grid-card {
+  background: var(--color-card);
+  border-radius: .9em;
+  box-shadow: var(--shadow-card);
+  padding: 1.1em 1.3em;
+  text-align: center;
+  border: 1.2px solid var(--color-bg-alt);
+  transition: box-shadow .17s, transform .13s;
+}
+.grid-card img {
+  border-radius: 0.6em;
+  margin-bottom: 1em;
+  width: 100%; height: auto; object-fit:cover;
+  min-height: 110px; max-height: 180px;
+}
+.grid-card h3 { color: var(--color-accent); margin-bottom: .23em;}
+.grid-card p { color: var(--color-text-muted); font-size: 1em;}
+.grid-card:hover { box-shadow: 0 7px 22px rgba(32,120,180,0.08); transform: translateY(-2.5px);}
 
 @media (max-width:520px){
   pre, pre code {
@@ -400,6 +443,8 @@ pre::-webkit-scrollbar-thumb {
   color: var(--color-bg);
   outline:2.3px solid var(--color-accent);
 }
+
+.text-center { text-align: center;}
 
 /* Footer: rounded top, shadow, lebar sama navbar */
 footer, .footer {
