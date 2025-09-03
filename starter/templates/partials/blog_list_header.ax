@@ -1,0 +1,4 @@
+<h2>{{site.blog_list_title}}</h2>
+<section>
+{{{ items }}}
+</section>

@@ -1,7 +1,7 @@
 <article class="card mt-3">
   <div class="blog-cover">
       {{#if image}}
-        <a href="/blog/{{slug}}.html">
+        <a href="/{{cname}}/{{slug}}.html">
         <img src="{{image}}" alt="Cover {{title}}" class="card-image">
         </a>
       {{else}}

@@ -1,5 +1,5 @@
 ---
-layout: layout.ax
+layout: base.ax
 ---
 <section>
   <h2>Tag Cloud</h2>

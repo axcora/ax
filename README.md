@@ -2,18 +2,15 @@
 
 <div align="center">
 
- █████╗ ██╗  ██╗
-██╔══██╗╚██╗██╔╝
-███████║ ╚███╔╝ 
-██╔══██║ ██╔██╗ 
-██║  ██║██╔╝ ██╗
-╚═╝  ╚═╝╚═╝  ╚═╝
-
 **A lightning-fast, dependency-minimal static site generator**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
-[![npm](https://img.shields.io/badge/npm-package-blue.svg)](https://www.npmjs.com/)
+[![npm version](https://img.shields.io/npm/v/axcora-ax.svg)](https://npmjs.com/package/axcora-ax)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Support](https://img.shields.io/badge/Support-Donate-blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JVZVXBC4N9DAN)
+[![Github Sponsor](https://img.shields.io/badge/support-github-black?style=flat-square)](https://github.com/sponsors/mesinkasir)
+[![Hire Developer](https://img.shields.io/badge/hire-fiverr-teal)](https://www.fiverr.com/creativitas/)
+[![Gumroad Download](https://img.shields.io/badge/digital-gumroad-pink)](https://creativitaz.gumroad.com/)
+
 
 </div>
 
@@ -28,7 +25,7 @@
 - **📊 Smart CLI** - Beautiful progress bars and build statistics
 - **🔧 Zero Config** - Works out of the box, customize when needed
 
-## 🏃‍♂️ Quick Start
+## Quick Start
 
 ### Installation
 

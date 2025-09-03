@@ -1,18 +1,13 @@
 ---
-layout: layout.ax
+layout: base.ax
 ---
 <article class="blog-post">
   <header>
     <h1>{{ title }}</h1>
-    <div class="meta">
-    <time datetime="{{ date }}" style="color:#868eba;font-size:.99em;">{{ date }}</time>
-    {{#if tags}}
-      <div style="margin:1em 0;">
-        {{#each tags}}<span style="margin-right:8px;color:var(--accent)">
-        #{{ this }}</span>{{/each}}
-      </div>
-    {{/if}}
-    </div>
+    <div class="meta mb-3"><small>
+    <time datetime="{{ date }}">{{ date }}</time>
+    | by <a href="{{site.author.url}}">{{site.author.name}}</a>
+    </small></div>
   </header>
 {{# if image}}<img src="{{image}}" alt="{{title}}">{{/if}}
 <section class="content">

@@ -1,5 +1,5 @@
 ---
-layout: layout.ax
+layout: base.ax
 ---
   <section class="static-page">
     <h1>{{title}}</h1>

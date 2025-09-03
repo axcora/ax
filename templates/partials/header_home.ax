@@ -1,0 +1,5 @@
+<section class="landing">
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+{{#if intro}}<p>{{intro}}</p>{{/if}}
+</section>

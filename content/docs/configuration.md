@@ -1,3 +1,18 @@
+---
+title: "Configuration Your Site"
+date: "2025-09-02"
+image: "/assets/img/axs.jpg"
+description: "Setup and Configuration your website project"
+tags: 
+ - static site generator
+ - configuration
+ - setup
+---
+### [Setup and Configuration](/docs/configuration.html)
+
+For first you need to setup your website project, open on `data/site.json` and update it.
+
+```json
 {
   "name": "AX SSG",
   "lang": "en",
@@ -23,3 +38,5 @@
     { "name": "Website", "url": "https://ax.axcora.com/" }
   ]
 }
+
+```

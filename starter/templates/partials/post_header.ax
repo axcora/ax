@@ -1,0 +1,6 @@
+  <header>
+    <h1>{{ title }}</h1>
+    <div class="meta mb-3">
+    <time datetime="{{ date }}" style="color:#868eba;font-size:.99em;">{{ date }}</time>
+    </div>
+  </header>

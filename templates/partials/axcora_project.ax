@@ -1,0 +1,13 @@
+<section class="feature-grid">
+<h2>{{site.projects.title}}</h2>
+<div class="grid-list-2">
+{{#each site.projects.item}}
+<div class="grid-card"><a href="{{url}}" target="_blank">
+<img src="{{image}}" alt="{{title}}" />
+<h3>{{name}}</h3>
+<p>{{text}}</p>
+</a>
+</div>
+{{/each}}
+</div>
+</section>

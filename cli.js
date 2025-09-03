@@ -86,6 +86,6 @@ Examples:
 
 Tips:
 - Run "ax init starter" in new folder to create a new starter project.
-- More info: https://ax.axcora.com
+- More info: https://ax.axcora
 `);
 }

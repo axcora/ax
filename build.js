@@ -70,6 +70,7 @@ function generateSeoTags(ctx) {
 <meta name="twitter:title" content="${ctx.title || ''} | ${(ctx.site && ctx.site.name) || ''}">
 <meta name="twitter:description" content="${ctx.description || ''}">
 <meta name="twitter:image" content="${(ctx.site && ctx.site.icon) || ctx.image || ''}">
+<link href="${(ctx.site && ctx.site.icon) || ctx.image || ''}" rel="icon" type="image/x-icon">
 <meta name="generator" content="AX Axcora ssg"/>
 `.trim();
 }
@@ -83,7 +84,6 @@ function injectSeo(html, ctx) {
  */
 function renderWithLayoutRecursive(tplKey, ctx, templates) {
   let src = templates[tplKey];
-  // PATCH: fallback otomatis ke tema blog jika template koleksi baru belum ada
   if (!src) {
     if (tplKey.endsWith('-list-item')) src = templates['blog-list-item'];
     else if (tplKey.endsWith('-list')) src = templates['blog-list'];
@@ -139,6 +139,9 @@ function getCollections() {
         }
       });
       return parsed;
+    });
+        items.sort((a, b) => {
+      return new Date(b.date || 0) - new Date(a.date || 0);
     });
     coll[name] = items;
   }
@@ -234,34 +237,53 @@ fs.mkdirSync("dist");
 
 // Copy assets
 if(fs.existsSync("assets")) copyDir("assets", "dist/assets");
+function copyStaticToDist(srcDir, destDir) {
+  for (const entry of fs.readdirSync(srcDir, { withFileTypes: true })) {
+    const srcPath = path.join(srcDir, entry.name);
+    const destPath = path.join(destDir, entry.name);
+    if (entry.isDirectory()) {
+      fs.mkdirSync(destPath, { recursive: true });
+      copyStaticToDist(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+}
+
+if (fs.existsSync("static")) {
+  copyStaticToDist("static", "dist");
+}
 
 let totalPages = 0, totalPosts = 0, totalCollections = Object.keys(collections).length;
 const POSTS_PER_PAGE = 6;
 
 // --- BUILD COLLECTION LISTS AND POSTS ---
 for (let [cname, citems] of Object.entries(collections)) {
+  
   const totalPageCount = Math.max(1, Math.ceil(citems.length / POSTS_PER_PAGE));
   // Pagination/list pages
   for (let page = 0; page < totalPageCount; page++) {
     const pageItems = citems.slice(page * POSTS_PER_PAGE, (page+1) * POSTS_PER_PAGE);
     const itemListHtml = pageItems.map(item =>
-      renderWithLayoutRecursive(`${cname}-list-item`, { ...item, cname }, templates)
-    ).join('');
+  renderWithLayoutRecursive(`${cname}-list-item`, { ...item, site: siteData, cname }, templates)
+).join('');
     const prevPage = (page === 0) ? null : (page === 1 ? `/${cname}/` : `/${cname}/page/${page}.html`);
     const nextPage = (page < totalPageCount-1) ? `/${cname}/page/${page+2}.html` : null;
 
-    const listContext = {
-      items: itemListHtml,
-      pageNum: page+1,
-      totalPages: totalPageCount,
-      prevPage,
-      nextPage,
-      title: `${siteData.name} - ${cname}`,
-      description: siteData.description || '',
-      site: siteData,
-      image: siteData.icon || '',
-      ...dataFiles
-    };
+const listContext = {
+  items: itemListHtml,
+  pageNum: page+1,
+  totalPages: totalPageCount,
+  prevPage,
+  nextPage,
+  title: `${siteData.name} - ${cname}`,
+  description: siteData.description || '',
+  site: siteData,
+  image: pageItems?.image || siteData.icon || '',
+  ...dataFiles,
+  ...collections,
+};
+listContext[cname] = pageItems;
 
     const listHtml = renderWithLayoutRecursive(
       `${cname}-list`,
@@ -290,7 +312,7 @@ for (let [cname, citems] of Object.entries(collections)) {
       next: next && { url: `/${cname}/${next.slug}.html`, title: next.title },
       title: item.title || item.slug,
       description: item.description || item.excerpt || "",
-      image: siteData.icon || "",
+      image: item.image || siteData.icon || "",
       ...dataFiles
     };
     let postHtml = renderWithLayoutRecursive(
@@ -342,7 +364,7 @@ if (collections.blog) {
       site: siteData,
       title: `Tag: ${tag}`,
       description: `Posts tagged with "${tag}"`,
-      image: siteData.icon || '',
+      image: posts?.image || siteData.icon || '',
       ...dataFiles,
       page: { title: `Tag: ${tag}`, description: `Posts tagged with "${tag}"` }
     };
@@ -363,8 +385,9 @@ const indexContext = {
   site: siteData,
   title: siteData.title || "Welcome to AX SSG",
   description: siteData.description || "",
-  image: siteData.icon || "",
-  ...dataFiles
+  image: latestPosts?.image || siteData.icon || "",
+  ...dataFiles,
+  ...collections
 };
 const indexHtml = renderWithLayoutRecursive("index", indexContext, templates);
 fs.writeFileSync("dist/index.html", injectSeo(indexHtml, indexContext));
@@ -389,8 +412,9 @@ if (fs.existsSync("content/pages")) {
       site: siteData,
       title: data.title || f,
       description: data.description || "",
-      image: siteData.icon || "",
+      image: data.image || siteData.icon || "",
       ...dataFiles,
+      ...collections,
       page: { title: data.title || f, description: data.description || "" }
     };
 

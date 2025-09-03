@@ -1,0 +1,16 @@
+<nav class="post-pagination mb-5">
+  <div class="prev-post">
+    {{#if prev}}
+      <a href="{{ prev.url }}">
+        ← {{ prev.title }}
+      </a>
+    {{/if}}
+  </div>
+  <div class="next-post">
+    {{#if next}}
+      <a href="{{ next.url }}">
+        {{ next.title }} →
+      </a>
+    {{/if}}
+  </div>
+</nav>

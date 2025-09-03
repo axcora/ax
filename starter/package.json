@@ -1,6 +1,6 @@
 {
   "name": "axcora-ax",
-  "version": "1.0.2",
+  "version": "1.0.24",
   "description": "Starter static site/blog using axcora-ax generator",
   "keywords": [    "static-site",
     "blog",
@@ -11,7 +11,7 @@
   "homepage": "https://ax.axcora.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axcora/ax.git"
+    "url": "git+https://github.com/mesinkasir/ax-starter.git"
   },
   "license": "MIT",
   "author": "Axcora Team Dev",
@@ -26,6 +26,7 @@
   ],
   "type": "module",
   "scripts": {
+    "ax": "axcora-ax",
     "clean": "ax clean",
     "dev": "ax dev",
     "build": "ax build",

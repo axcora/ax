@@ -1,16 +1,5 @@
 ---
 layout: layout.ax
 ---
-<h2>{{site.blog_list_title}}</h2>
-<section>
-  {{{ items }}}
-</section>
-<nav class="pagination">
-  {{#if prevPage}}
-    <a href="{{ prevPage }}" class="btn btn-outline">← Prev</a>
-  {{/if}}
-  <span>From {{ pageNum }} of {{ totalPages }}</span>
-  {{#if nextPage}}
-    <a href="{{ nextPage }}" class="btn btn-outline">Next →</a>
-  {{/if}}
-</nav>
+{{> blog_list_header}}
+{{> blog_pagination}}

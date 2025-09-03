@@ -1,16 +1,16 @@
 ---
-layout: layout.ax
+layout: base.ax
 ---
-<h2>Blog Terbaru</h2>
+<h1 class="text-center">{{title}}</h1>
 <section>
-  {{{ items }}}
+{{{ items }}}
 </section>
 <nav class="pagination">
-  {{#if prevPage}}
-    <a href="{{ prevPage }}" class="btn btn-outline">← Prev</a>
-  {{/if}}
-  <span>From {{ pageNum }} of {{ totalPages }}</span>
-  {{#if nextPage}}
-    <a href="{{ nextPage }}" class="btn btn-outline">Next →</a>
-  {{/if}}
+{{#if prevPage}}
+<a href="{{ prevPage }}" class="btn btn-outline">← Prev</a>
+{{/if}}
+<span>From {{ pageNum }} of {{ totalPages }}</span>
+{{#if nextPage}}
+<a href="{{ nextPage }}" class="btn btn-outline">Next →</a>
+{{/if}}
 </nav>

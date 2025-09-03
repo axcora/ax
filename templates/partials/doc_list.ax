@@ -1,0 +1,13 @@
+<h2>{{site.docs_list_title}}</h2>
+<section class="blog-list">
+{{#each docs}}
+<article class="card">
+<a href="/docs/{{slug}}.html"><img src="{{image}}" alt="image {{title}}" class="card-image"></a>
+<div class="card-content">
+<h2 class="card-title"><a href="/docs/{{slug}}.html">{{title}}</a></h2>
+<p class="card-desc">{{description}}</p>
+<a href="/docs/{{slug}}.html" class="card-readmore">Read {{title}}</a>
+</div>
+</article>
+{{/each}}
+</section>

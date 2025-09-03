@@ -9,15 +9,47 @@
               "name": "Axcora Team", 
               "url": "https://ax.axcora.com" 
    },
-  "blog_list_title": "The Blog",
-  "show_blog_list": "6",
   "title": "AX",
   "nav": [
     { "title": "Home", "url": "/" },
+    { "title": "About", "url": "/about.html" },
+    { "title": "Docs", "url": "/docs/" },
     { "title": "Blog", "url": "/blog/" },
-    { "title": "Tags", "url": "/tags.html" },
-    { "title": "About", "url": "/about.html" }
+    { "title": "Support", "url": "#support" },
+    { "title": "Github", "url": "https://github.com/sponsors/mesinkasir" }
   ],
+  "blog_list_title": "The Blog",
+  "docs_list_title": "Documentation",
+  "show_blog_list": "6",
+  "support": {
+    "title": "Buy me a Coffee",
+    "github": "https://github.com/sponsors/mesinkasir",
+    "gumroad": "https://creativitaz.gumroad.com/coffee",
+    "paypal": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JVZVXBC4N9DAN"
+  },
+  "projects": {
+    "title": "The Axcora Projects",
+    "item": [
+      {
+        "name": "AXCORA SSG",
+        "image": "/assets/img/logo.jpg",
+        "text": "All-in-One Static Site Generator & CSS Framework - Build beautiful, responsive websites with our modern static site generator ,commplete CSS framework with the components, automatic build system, and dark mode support",
+        "url": "https://ssg.axcora.com"
+      },
+      {
+        "name": "MARKDOWNUTS",
+        "image": "https://markdownuts.axcora.com/img/OEZrId9vLY-1024.avif",
+        "text": "Next Generation PHP website work with YAML and Markdown,A flatfile CMS - alternative static site generator",
+        "url": "https://markdownuts.axcora.com/"
+      }
+    ]
+  },
+  "video": {
+    "title": "Need a web developer?",
+    "text": "Hey! Need help with web development? I’m available and excited to contribute—just let me know what your project needs!",
+    "button": "Contact Me",
+    "url": "mailto:axcora@gmail.com"
+  },
   "social": [
     { "name": "GitHub", "url": "https://github.com/sponsors/mesinkasir/"},
     { "name": "Website", "url": "https://ax.axcora.com/" }

@@ -1,4 +1,4 @@
-{{> head}}
+{{> head_ads}}
 {{> nav site=site nav=site.nav}}
 {{> main}}
 {{> footer}}
