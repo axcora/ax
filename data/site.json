@@ -4,7 +4,7 @@
   "locale": "en-US",
   "description": "Minimalist static site generator with modern design built with AX SSG - by Axcora tech",
   "url": "https://ax.axcora.com",
-  "icon": "/assets/img/logo.png",
+  "icon": "/assets/img/logo-small.png",
   "author": {
               "name": "Axcora Team", 
               "url": "https://ax.axcora.com" 

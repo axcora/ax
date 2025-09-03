@@ -3,7 +3,7 @@
 <div class="grid-list-2">
 {{#each site.projects.item}}
 <div class="grid-card"><a href="{{url}}" target="_blank">
-<img src="{{image}}" alt="{{title}}" />
+<img src="{{image}}" alt="{{name}}" />
 <h3>{{name}}</h3>
 <p>{{text}}</p>
 </a>
